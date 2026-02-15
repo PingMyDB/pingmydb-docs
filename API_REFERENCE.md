@@ -3,7 +3,7 @@
 All requests must include the `token` header for authenticated routes.
 
 ## Authentication
-- `POST /api/auth/register`: Create a new user account.
+- `POST /api/auth/signup`: Create a new user account.
 - `POST /api/auth/login`: Authenticate and receive a JWT.
 
 ## Monitors
@@ -24,10 +24,6 @@ All requests must include the `token` header for authenticated routes.
 - `GET /api/notifications/channels`: Get all active alert channels.
 - `POST /api/notifications/channels`: Add a new alert channel (Slack/Discord/Email).
 - `DELETE /api/notifications/channels/:id`: Remove a channel.
-
-## Payments
-- `POST /api/payments/create-order`: Initialize a Razorpay checkout session.
-- `POST /api/payments/verify`: Confirm payment signature and update user plan.
 
 ## Admin (Internal)
 - `GET /api/admin/stats`: System-wide health and user statistics.
